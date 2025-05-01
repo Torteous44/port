@@ -1,7 +1,7 @@
 .navbarSmall {
     display: flex;
     align-items: stretch;
-    height: 100vh;
+    height:20vh;
     background: transparent;
     position: relative;
     width: 100%;

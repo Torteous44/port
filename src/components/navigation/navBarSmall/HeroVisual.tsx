@@ -135,7 +135,7 @@ export const HeroVisual = forwardRef<HeroVisualHandle>((_, ref) => {
             // Pixelate coordinates to create blocky effect - but with smoother edges
             vec2 pixelate(vec2 uv, float pixelSize) {
               // Apply a slight dithering to soften the pixel edges
-              uv += noise(uv * 900.0) * 2.95;
+              uv += noise(uv * 1000.0) * 5.0;
               return floor(uv * pixelSize) / pixelSize;
             }
             
@@ -433,7 +433,7 @@ export const HeroVisual = forwardRef<HeroVisualHandle>((_, ref) => {
         left: 0,
         right: 0,
         bottom: 0,
-        scale: 2,
+        scale: 3,
       }}
     />
   );
