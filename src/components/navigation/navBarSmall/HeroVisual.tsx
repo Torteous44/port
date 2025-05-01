@@ -433,7 +433,7 @@ export const HeroVisual = forwardRef<HeroVisualHandle>((_, ref) => {
         left: 0,
         right: 0,
         bottom: 0,
-        scale: 3,
+        transform: "scale(3)",
       }}
     />
   );
