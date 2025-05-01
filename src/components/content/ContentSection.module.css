@@ -1,0 +1,378 @@
+*{
+    font-family: 'DM Sans', sans-serif;
+}
+
+.contentSection {
+  width: 100%;
+  height: auto;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+}
+
+.innerContent {
+  width: 1000px;
+  height: 100%;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid black;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.header {
+  width: 100%;
+  height: 20px;
+  border-bottom: 1px solid black;
+  display: flex;
+  align-items: center;
+  background-color: #E4FFE2;
+  overflow: hidden;
+  position: relative;
+  border-top: 1px solid black;
+}
+
+.header h1 {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: black;
+  margin: 0;
+  padding: 20px 20px;
+  white-space: nowrap;
+  animation: scroll 20s linear infinite;
+  position: absolute;
+  width: 200%;
+  text-align: center;
+  display: flex;
+  gap: 100px;
+}
+
+.header h1 span {
+  display: inline-block;
+}
+
+.aboutGrid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  width: 100%;
+}
+
+.aboutContent {
+  width: 100%;
+  border-right: 1px solid black;
+}
+
+.aboutEmpty {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.aboutContent p {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  line-height: 1.8;
+  color: rgba(0, 0, 0, 0.8);
+  margin: 0;
+  text-align: left;
+  padding: 20px;
+}
+
+.contactInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.contactInfo a {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.8);
+  text-decoration: none;
+  transition: color 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 0px 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactInfo a:hover {
+  color: rgba(0, 0, 0, 1);
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+  grid-template-rows: 1fr 1fr;
+  height: 100%;
+}
+
+.gridItem {
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-family: 'DM Sans', sans-serif;
+  padding: 20px;
+  min-width: 0;
+  min-height: 0;
+}
+
+.gridItem:nth-child(3n) {
+  border-right: none;
+}
+
+.gridItem:nth-child(7),
+.gridItem:nth-child(8),
+.gridItem:nth-child(9) {
+  border-bottom: none;
+}
+
+
+.projectName {
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.projectName h2 {
+  font-size: 24px;
+  font-weight: 300;
+  margin: 0;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.projectDetails {
+  text-align: left;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-family: monospace;
+}
+
+.detailsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.description {
+  font-size: 12px;
+  line-height: 1.5;
+  margin: 0;
+  white-space: pre-line;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+.detailsContainer h3 {
+  font-size: 12px;
+  font-weight: 550;
+  margin: 0;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.detailsContainer p {
+  font-size: 12px;
+  line-height: 1.5;
+  margin: 0;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: normal;
+}
+
+.projectImage {
+  padding: 0;
+}
+
+.imagePlaceholder {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.03);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 14px;
+  transition: all 0.2s ease;
+  overflow: hidden;
+  position: relative;
+  cursor: none;
+}
+
+.imagePlaceholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.2s ease;
+}
+
+.imagePlaceholder:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.visitSiteCursor {
+  position: fixed;
+  width: 100px;
+  height: 30px;
+  background: #E4FFE2;
+  color: black;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  border-radius: 0px;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  border: 1px solid black;
+}
+
+.arrowIcon {
+  width: 12px;
+  height: 12px;
+  margin-left: 4px;
+  vertical-align: middle;
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+  .innerContent {
+    width: 100%;
+    max-width: 100%;
+    border-left: none;
+    border-right: none;
+  }
+  
+  .aboutGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .aboutContent {
+    border-right: none;
+    border-bottom: 1px solid black;
+  }
+  
+  .aboutContent p {
+    font-size: 14px;
+    padding: 16px;
+  }
+  
+  .contactInfo {
+    padding: 16px 0;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .contactInfo a {
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    width: 100%;
+    justify-content: flex-start;
+  }
+  
+  .contactInfo a:last-child {
+    border-bottom: none;
+  }
+  
+  .gridContainer {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  
+  .gridItem {
+    border-right: none;
+  }
+  
+  .gridItem:nth-child(3n) {
+    border-right: none;
+  }
+  
+  .gridItem:nth-child(4),
+  .gridItem:nth-child(5),
+  .gridItem:nth-child(6) {
+    border-bottom: 1px solid black;
+  }
+  
+  .projectName h2 {
+    font-size: 20px;
+  }
+  
+  .description {
+    font-size: 14px;
+  }
+  
+  .detailsContainer h3 {
+    font-size: 14px;
+  }
+  
+  .detailsContainer p {
+    font-size: 14px;
+  }
+  
+  /* Remove cursor effect on mobile */
+  .imagePlaceholder {
+    cursor: pointer;
+  }
+  
+  .imagePlaceholder:hover img {
+    transform: none;
+  }
+  
+  .visitSiteCursor {
+    display: none;
+  }
+  
+  /* Additional brutalist mobile styling */
+  .header {
+    height: 30px;
+  }
+  
+  .header h1 {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  
+  .projectImage {
+    height: 180px;
+  }
+  
+  .projectImage a {
+    height: 100%;
+  }
+}
+
+/* Adjust for very small screens */
+@media screen and (max-width: 480px) {
+  .projectName h2 {
+    font-size: 18px;
+  }
+  
+  .gridItem {
+    padding: 16px;
+  }
+  
+  .aboutContent p {
+    font-size: 13px;
+  }
+} 

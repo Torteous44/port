@@ -1,0 +1,37 @@
+.basic-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+  width: 100%;
+  max-width: 300px;
+}
+
+.basic-card:hover {
+  transform: translateY(-4px);
+}
+
+.basic-card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.basic-card-content {
+  padding: 1.5rem;
+}
+
+.basic-card-title {
+  margin: 0 0 0.5rem;
+  font-size: 1.25rem;
+  color: #333;
+}
+
+.basic-card-description {
+  margin: 0;
+  color: #666;
+  font-size: 0.9rem;
+  line-height: 1.5;
+} 

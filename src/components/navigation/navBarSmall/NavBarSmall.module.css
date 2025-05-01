@@ -1,0 +1,127 @@
+.navbarSmall {
+    display: flex;
+    align-items: stretch;
+    height: 100vh;
+    background: transparent;
+    position: relative;
+    width: 100%;
+    margin: 0px auto 0;
+    overflow: hidden;
+    width: 1000px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+  }
+  
+  .backgroundContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+  }
+
+  .backgroundContainer > div:last-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+  }
+
+
+  
+  .contentContainer {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  }
+  
+  .navbarSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 20px;
+    position: relative;
+    height: 100%;
+    flex: 1;
+    pointer-events: auto;
+  }
+  
+  .navbarSection::before {
+    content: '';
+    position: absolute;
+    inset: 0px;
+    background: #f5f5f500;
+    z-index: 1;
+    clip-path: inherit;
+    border-radius: inherit;
+    pointer-events: none;
+  }
+  
+  /* Content layer */
+  .navbarSection > * {
+    position: relative;
+    z-index: 2;
+    color: #000;
+  }
+  
+  /* Text styling */
+  .navbarSection span {
+    font-size: 16px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    
+    padding: 0 10px;
+    font-family: 'DM Sans', sans-serif;
+  }
+  
+  /* Remove the old border effect */
+  .navbarSection::after {
+    display: none;
+  }
+
+  /* Mobile Styles */
+  @media screen and (max-width: 768px) {
+    .navbarSmall {
+      width: 100%;
+      height: 60px;
+      border-left: none;
+      border-right: none;
+    }
+    
+    .backgroundContainer {
+      display: none; /* Hide hero visual on mobile */
+    }
+    
+    .contentContainer {
+      background: #E4FFE2;
+      border-bottom: 1px solid black;
+    }
+    
+    .navbarSection span {
+      font-size: 14px;
+      font-weight: 500;
+    }
+  }
+
+  /* Very small screens */
+  @media screen and (max-width: 480px) {
+    .navbarSmall {
+      height: 50px;
+    }
+    
+    .navbarSection span {
+      font-size: 12px;
+    }
+  } 
