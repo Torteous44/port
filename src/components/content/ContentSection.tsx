@@ -138,9 +138,8 @@ const ContentSection: React.FC = () => {
               </p>
 
               <h3>[SCOPE]</h3>
-              <p>UX DESIGN</p>
-              <p>FRONT-END DEVELOPMENT</p>
-              <p>BACK-END DEVELOPMENT</p>
+              <p>UX/UI DESIGN</p>
+              <p>FULL STACK DEVELOPMENT</p>
 
               <h3>[TIMELINE]</h3>
               <p>NOV 2024 - JAN 2025</p>
@@ -171,9 +170,9 @@ const ContentSection: React.FC = () => {
               </p>
 
               <h3>[SCOPE]</h3>
-              <p>UX DESIGN</p>
-              <p>FRONT-END DEVELOPMENT</p>
-              <p>BACK-END DEVELOPMENT</p>
+              <p>UX/UI DESIGN</p>
+              <p>FULL STACK DEVELOPMENT</p>
+              <p>SEO</p>
 
               <h3>[TIMELINE]</h3>
               <p>MAR - JUN 2025</p>
@@ -203,8 +202,8 @@ const ContentSection: React.FC = () => {
 
               <h3>[SCOPE]</h3>
               <p>RESEARCH</p>
-              <p>UI DESIGN</p>
-
+              <p>SYSTEM DESIGN</p>
+              <p>FULL STACK DEVELOPMENT</p>
               <h3>[TIMELINE]</h3>
               <p>APR - SEPT 2023</p>
               <h3>[NOTES]</h3>
@@ -301,8 +300,7 @@ const ContentSection: React.FC = () => {
 
               <h3>[SCOPE]</h3>
               <p>UI DESIGN</p>
-              <p>FRONT-END DEVELOPMENT</p>
-              <p>BACK-END DEVELOPMENT</p>
+              <p>FULL STACK DEVELOPMENT</p>
             </div>
           </div>
           <div className={`${styles.gridItem} ${styles.projectImage}`}>
