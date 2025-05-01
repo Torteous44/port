@@ -296,7 +296,7 @@ const ContentSection: React.FC = () => {
           <div className={`${styles.gridItem} ${styles.projectDetails}`}>
             <div className={styles.detailsContainer}>
               <p className={styles.description}>
-                PHOTO ARCHIVE FOR SANTA CRUZ DE REAL
+                PHOTO ARCHIVE FOR SANTA CRUZ DE REAL IN SEGOVIA, SPAIN
               </p>
 
               <h3>[SCOPE]</h3>
