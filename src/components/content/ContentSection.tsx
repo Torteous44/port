@@ -267,12 +267,12 @@ const ContentSection: React.FC = () => {
               <p className={styles.description}>AZULU EVENTS PLATFORM</p>
 
               <h3>[SCOPE]</h3>
-              <p>UX DESIGN</p>
+              <p>UI DESIGN</p>
               <p>FRONT-END DEVELOPMENT</p>
-              <p>BACK-END DEVELOPMENT</p>
+              <p>CUSTOM CMS DEVELOPMENT</p>
 
               <h3>[TIMELINE]</h3>
-              <p>JAN - MAR 2024</p>
+              <p>JAN 2025</p>
             </div>
           </div>
           <div className={`${styles.gridItem} ${styles.projectImage}`}>
@@ -300,12 +300,9 @@ const ContentSection: React.FC = () => {
               </p>
 
               <h3>[SCOPE]</h3>
-              <p>UX DESIGN</p>
+              <p>UI DESIGN</p>
               <p>FRONT-END DEVELOPMENT</p>
               <p>BACK-END DEVELOPMENT</p>
-
-              <h3>[TIMELINE]</h3>
-              <p>FEB - APR 2024</p>
             </div>
           </div>
           <div className={`${styles.gridItem} ${styles.projectImage}`}>
