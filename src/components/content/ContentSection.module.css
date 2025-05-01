@@ -198,12 +198,13 @@
 
 .projectImage {
   padding: 0;
+  overflow: hidden;
 }
 
 .imagePlaceholder {
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.03);
+  background: white;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -213,6 +214,7 @@
   overflow: hidden;
   position: relative;
   cursor: none;
+  margin: 0;
 }
 
 .imagePlaceholder img {
@@ -221,11 +223,9 @@
   object-fit: cover;
   object-position: center;
   transition: transform 0.2s ease;
+  display: block;
 }
 
-.imagePlaceholder:hover {
-  background: rgba(0, 0, 0, 0.05);
-}
 
 .visitSiteCursor {
   position: fixed;

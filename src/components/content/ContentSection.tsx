@@ -313,7 +313,7 @@ const ContentSection: React.FC = () => {
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
             >
-              <img src="/santacruz.png" alt="Santa Cruz Archive" />
+              <img src="/santacruz.svg" alt="Santa Cruz Archive" />
             </a>
           </div>
         </div>
