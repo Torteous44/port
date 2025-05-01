@@ -94,6 +94,7 @@
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
+  padding: 15px 0;
 }
 
 .contactInfo a {
@@ -268,7 +269,7 @@
   
   .aboutContent {
     border-right: none;
-    border-bottom: 1px solid black;
+
   }
   
   .aboutContent p {
@@ -277,18 +278,25 @@
   }
   
   .contactInfo {
-    padding: 16px 0;
+    padding: 0;
     flex-direction: column;
-    gap: 16px;
+    gap: 0;
+    border-top: 1px solid black;
+    background-color: #f8f8f8;
   }
   
   .contactInfo a {
-    padding: 8px 16px;
+    padding: 12px 16px;
     font-size: 14px;
     font-weight: 500;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid black;
     width: 100%;
     justify-content: flex-start;
+    background-color: white;
+  }
+  
+  .contactInfo a:hover {
+    background-color: #f5f5f5;
   }
   
   .contactInfo a:last-child {
@@ -298,20 +306,27 @@
   .gridContainer {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
+    border-top: 1px solid black;
   }
   
   .gridItem {
     border-right: none;
+    border-bottom: 1px solid black;
+    padding: 20px 16px;
   }
   
   .gridItem:nth-child(3n) {
     border-right: none;
   }
   
-  .gridItem:nth-child(4),
-  .gridItem:nth-child(5),
-  .gridItem:nth-child(6) {
+  .gridItem:nth-child(7),
+  .gridItem:nth-child(8),
+  .gridItem:nth-child(9) {
     border-bottom: 1px solid black;
+  }
+  
+  .gridItem:last-child {
+    border-bottom: none;
   }
   
   .projectName h2 {
@@ -346,6 +361,7 @@
   /* Additional brutalist mobile styling */
   .header {
     height: 30px;
+    border-bottom: none;
   }
   
   .header h1 {
@@ -354,11 +370,23 @@
   }
   
   .projectImage {
-    height: 180px;
+    height: auto;
+    padding: 0;
   }
   
   .projectImage a {
     height: 100%;
+    display: block;
+  }
+
+  .imagePlaceholder {
+    height: 250px;
+  }
+  
+  .imagePlaceholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 }
 
@@ -374,5 +402,14 @@
   
   .aboutContent p {
     font-size: 13px;
+    line-height: 1.6;
+  }
+  
+  .projectImage {
+    height: auto;
+  }
+  
+  .imagePlaceholder {
+    height: 200px;
   }
 } 
