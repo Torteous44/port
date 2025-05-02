@@ -89,7 +89,12 @@
     align-items: center;
     justify-content: center;
   }
-  
+  .navbarSection:hover {
+    cursor: crosshair;
+  }
+  .navbarSection:hover span {
+    cursor: crosshair;
+  }
   /* Remove the old border effect */
   .navbarSection::after {
     display: none;

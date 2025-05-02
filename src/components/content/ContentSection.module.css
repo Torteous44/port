@@ -53,9 +53,11 @@
 .contactInfo {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
-  padding: 10px 20px;
+  padding: 20px;
+  box-sizing: border-box;
+  gap: 30px;
 }
 
 .contactInfo a {
@@ -67,9 +69,8 @@
   display: flex;
   align-items: center;
   gap: 4px;
-  padding: 0px 40px;
+  padding: 8px 16px;
   justify-content: center;
-  align-items: center;
 }
 
 .contactInfo a:hover {
@@ -233,7 +234,7 @@
   }
   
   .aboutContent p {
-    font-size: 14px;
+    font-size: 12px;
     padding: 16px;
   }
   
@@ -247,7 +248,7 @@
   
   .contactInfo a {
     padding: 12px 16px;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 500;
     border-bottom: 1px solid black;
     width: 100%;
@@ -337,15 +338,15 @@
   }
   
   .description {
-    font-size: 14px;
+    font-size: 12px;
   }
   
   .detailsContainer h3 {
-    font-size: 14px;
+    font-size: 12px;
   }
   
   .detailsContainer p {
-    font-size: 14px;
+    font-size: 12px;
   }
   
   /* Remove cursor effects on mobile */
@@ -439,9 +440,13 @@
     padding: 25px;
   }
   
+  .contactInfo {
+    padding: 24px;
+  }
+  
   .contactInfo a {
     font-size: 14px;
-    padding: 0px 50px;
+    padding: 10px 20px;
   }
   
   .projectImage {
