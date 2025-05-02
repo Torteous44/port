@@ -411,7 +411,7 @@
 @media screen and (min-width: 1200px) {
   .innerContent {
     width: 1000px;
-    max-width: 90%;
+    max-width: 80%;
   }
   
   .gridContainer {
@@ -419,34 +419,34 @@
   }
   
   .projectName h2 {
-    font-size: 28px;
+    font-size: 24px;
     text-align: left;
   }
   
   .description, 
   .detailsContainer p {
-    font-size: 14px;
-    line-height: 1.6;
+    font-size: 12px;
+    line-height: 1.5;
   }
   
   .detailsContainer h3 {
-    font-size: 14px;
-    margin-bottom: 5px;
+    font-size: 12px;
+    margin-bottom: 4px;
   }
   
   .aboutContent p {
-    font-size: 14px;
-    line-height: 2;
-    padding: 25px;
+    font-size: 12px;
+    line-height: 1.8;
+    padding: 20px;
   }
   
   .contactInfo {
-    padding: 24px;
+    padding: 20px;
   }
   
   .contactInfo a {
-    font-size: 14px;
-    padding: 10px 20px;
+    font-size: 12px;
+    padding: 8px 16px;
   }
   
   .projectImage {
@@ -456,11 +456,11 @@
   }
   
   .imagePlaceholder {
-    padding: 80px;
+    padding: 60px;
   }
   
   .gridItem {
-    padding: 25px;
+    padding: 20px;
   }
 }
 

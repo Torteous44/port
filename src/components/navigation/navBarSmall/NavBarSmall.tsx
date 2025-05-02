@@ -23,8 +23,11 @@ const NavBarSmall: React.FC = () => {
   const handleMouseMove = (e: React.MouseEvent) => {
     if (isMobile || !heroRef.current?.updateMousePosition) return;
     const rect = e.currentTarget.getBoundingClientRect();
-    const x = 0.5 + ((e.clientX - rect.left) / rect.width - 0.5) / 3;
-    const y = 0.5 + (1 - (e.clientY - rect.top) / rect.height - 0.5) / 3;
+    const divisionFactor = window.innerWidth >= 1700 ? 1 : 3;
+    const x =
+      0.5 + ((e.clientX - rect.left) / rect.width - 0.5) / divisionFactor;
+    const y =
+      0.5 + (1 - (e.clientY - rect.top) / rect.height - 0.5) / divisionFactor;
     heroRef.current.updateMousePosition(x, y);
   };
 
