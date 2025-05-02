@@ -1,0 +1,70 @@
+@keyframes scrollBanner {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.movingBanner {
+  width: 100%;
+  height: 20px;
+  border-bottom: 1px solid black;
+  display: flex;
+  align-items: center;
+  background-color: #E4FFE2;
+  overflow: hidden;
+  position: relative;
+  border-top: 1px solid black;
+}
+
+.movingBannerText {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 350;
+  color: black;
+  margin: 0;
+  white-space: nowrap;
+  animation: scrollBanner 20s linear infinite;
+  position: absolute;
+  width: 200%;
+  text-align: center;
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+  align-items: center;
+  line-height: 2;
+}
+
+.movingBannerText span {
+  display: inline-block;
+}
+
+/* When MovingBanner is the third child, remove top border */
+.movingBanner:nth-child(3) {
+  border-top: none; 
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+  .movingBanner {
+    height: 30px;
+    border-bottom: none;
+  }
+  
+  .movingBannerText {
+    font-size: 14px;
+    font-weight: 600;
+  }
+}
+
+/* Large Screen Styles */
+@media screen and (min-width: 1200px) {
+  .movingBanner {
+    height: 25px;
+  }
+  
+  .movingBannerText {
+    font-size: 14px;
+  }
+} 

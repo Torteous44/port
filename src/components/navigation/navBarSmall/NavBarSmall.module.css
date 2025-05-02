@@ -1,7 +1,7 @@
 .navbarSmall {
     display: flex;
     align-items: stretch;
-    height:20vh;
+    height: 40vh;
     background: transparent;
     position: relative;
     width: 100%;
@@ -85,6 +85,9 @@
     font-family: 'DM Sans', sans-serif;
     background: #E4FFE2;
     border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
   /* Remove the old border effect */

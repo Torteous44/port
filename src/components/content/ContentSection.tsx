@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import styles from "./ContentSection.module.css";
+import MovingBanner from "../common/MovingBanner";
 
 const VisitSiteCursor: React.FC<{ x: number; y: number }> = ({ x, y }) => {
   return (
@@ -95,37 +96,9 @@ const ContentSection: React.FC = () => {
             </div>
           </div>
         </div>
-        <div className={styles.header}>
-          <h1>
-            <span>PROJECTS</span>
-            <span>PROJECTS</span>
-            <span>PROJECTS</span>
-            <span>PROJECTS</span>
-            <span>PROJECTS</span>
-            <span>PROJECTS</span>
-            <span>PROJECTS</span>
-            <span>PROJECTS</span>
-            <span>PROJECTS</span>
-            <span>PROJECTS</span>
-            <span>PROJECTS</span>
-            <span>PROJECTS</span>
-            <span>PROJECTS</span>
-            <span>PROJECTS</span>
-            <span>PROJECTS</span>
-            <span>PROJECTS</span>
-            <span>PROJECTS</span>
-            <span>PROJECTS</span>
-            <span>PROJECTS</span>
-            <span>PROJECTS</span>
-            <span>PROJECTS</span>
-            <span>PROJECTS</span>
-            <span>PROJECTS</span>
-            <span>PROJECTS</span>
-            <span>PROJECTS</span>
-            <span>PROJECTS</span>
-            <span>PROJECTS</span>
-          </h1>
-        </div>
+
+        <MovingBanner text="PROJECTS" repetitions={27} animationDuration={20} />
+
         <div className={styles.gridContainer}>
           {/* Project 1 */}
           <div className={`${styles.gridItem} ${styles.projectName}`}>
@@ -224,39 +197,13 @@ const ContentSection: React.FC = () => {
             </a>
           </div>
         </div>
-        <div className={styles.header}>
-          <h1>
-            <span>WEB DEVELOPMENT</span>
-            <span>WEB DEVELOPMENT</span>
-            <span>WEB DEVELOPMENT</span>
-            <span>WEB DEVELOPMENT</span>
-            <span>WEB DEVELOPMENT</span>
-            <span>WEB DEVELOPMENT</span>
-            <span>WEB DEVELOPMENT</span>
-            <span>WEB DEVELOPMENT</span>
-            <span>WEB DEVELOPMENT</span>
-            <span>WEB DEVELOPMENT</span>
-            <span>WEB DEVELOPMENT</span>
-            <span>WEB DEVELOPMENT</span>
-            <span>WEB DEVELOPMENT</span>
-            <span>WEB DEVELOPMENT</span>
-            <span>WEB DEVELOPMENT</span>
-            <span>WEB DEVELOPMENT</span>
-            <span>WEB DEVELOPMENT</span>
-            <span>WEB DEVELOPMENT</span>
-            <span>WEB DEVELOPMENT</span>
-            <span>WEB DEVELOPMENT</span>
-            <span>WEB DEVELOPMENT</span>
-            <span>WEB DEVELOPMENT</span>
-            <span>WEB DEVELOPMENT</span>
-            <span>WEB DEVELOPMENT</span>
-            <span>WEB DEVELOPMENT</span>
-            <span>WEB DEVELOPMENT</span>
-            <span>WEB DEVELOPMENT</span>
-            <span>WEB DEVELOPMENT</span>
-            <span>WEB DEVELOPMENT</span>
-          </h1>
-        </div>
+
+        <MovingBanner
+          text="WEB DEVELOPMENT"
+          repetitions={29}
+          animationDuration={20}
+        />
+
         <div className={styles.gridContainer}>
           {/* Project 4 */}
           <div className={`${styles.gridItem} ${styles.projectName}`}>
