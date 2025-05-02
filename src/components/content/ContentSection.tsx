@@ -183,7 +183,9 @@ const ContentSection: React.FC = () => {
               <p>BACKED BY A WHARTON MBA VENTURE FUND</p>
             </div>
           </div>
-          <div className={`${styles.gridItem} ${styles.projectImage}`}>
+          <div
+            className={`${styles.gridItem} ${styles.projectImage} ${styles.reachImage}`}
+          >
             <a
               href="https://use-reach.com"
               target="_blank"

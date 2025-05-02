@@ -115,7 +115,9 @@
   font-size: 24px;
   font-weight: 300;
   margin: 0;
-  color: rgba(0, 0, 0, 0.8);
+  color: black;
+
+
 }
 
 .projectDetails {
@@ -140,20 +142,21 @@
   color: rgba(0, 0, 0, 0.8);
   font-weight: normal;
   margin-bottom: 10px;
+
 }
 
 .detailsContainer h3 {
   font-size: 12px;
   font-weight: 550;
   margin: 0;
-  color: rgba(0, 0, 0, 0.8);
+  color: black;
 }
 
 .detailsContainer p {
   font-size: 12px;
   line-height: 1.5;
   margin: 0;
-  color: rgba(0, 0, 0, 0.8);
+  color: black;
   font-weight: normal;
 }
 
@@ -163,6 +166,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* Special styling for Reach project image */
+.reachImage .imagePlaceholder {
+  padding: 80px;
+}
+
+.reachImage img {
+  max-width: 90%;
+  max-height: 90%;
 }
 
 .imagePlaceholder {
@@ -187,6 +200,7 @@
   object-fit: contain;
   transition: transform 0.2s ease;
   display: block;
+  padding: 10px;
 }
 
 .visitSiteCursor {
@@ -459,14 +473,11 @@
     padding: 60px;
   }
   
+  .reachImage .imagePlaceholder {
+    padding: 90px;
+  }
+  
   .gridItem {
     padding: 20px;
   }
 }
-
-/* Project image hover effect for desktop */
-@media (hover: hover) and (pointer: fine) {
-  .imagePlaceholder:hover img {
-    transform: scale(1.05);
-  }
-} 
