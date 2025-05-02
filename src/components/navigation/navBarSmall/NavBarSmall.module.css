@@ -81,8 +81,7 @@
     text-transform: uppercase;
     letter-spacing: 0.5px;
     cursor: pointer;
-    
-    padding: 0 10px;
+    padding: 2px 5px;
     font-family: 'DM Sans', sans-serif;
     background: #E4FFE2;
     border: 1px solid black;
