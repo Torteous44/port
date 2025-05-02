@@ -254,6 +254,7 @@ const ContentSection: React.FC = () => {
             <span>WEB DEVELOPMENT</span>
             <span>WEB DEVELOPMENT</span>
             <span>WEB DEVELOPMENT</span>
+            <span>WEB DEVELOPMENT</span>
           </h1>
         </div>
         <div className={styles.gridContainer}>

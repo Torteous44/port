@@ -1,4 +1,10 @@
-import { useRef, useEffect, forwardRef, useImperativeHandle } from "react";
+import {
+  useRef,
+  useEffect,
+  forwardRef,
+  useImperativeHandle,
+  useState,
+} from "react";
 import * as THREE from "three";
 
 export interface HeroVisualHandle {
@@ -14,6 +20,7 @@ export const HeroVisual = forwardRef<HeroVisualHandle>((_, ref) => {
   const actualMouseRef = useRef<{ x: number; y: number }>({ x: 0.5, y: 0.5 }); // Track actual mouse position
   const mousePresenceRef = useRef<number>(0.0); // Mouse presence factor (0 = absent, 1 = present)
   const heroRef = useRef<HeroVisualHandle | null>(null);
+  const [isLargeScreen, setIsLargeScreen] = useState(false);
 
   useImperativeHandle(ref, () => ({
     updateMousePosition: (x: number, y: number) => {
@@ -62,6 +69,22 @@ export const HeroVisual = forwardRef<HeroVisualHandle>((_, ref) => {
       container.removeEventListener("mousemove", handleMouseMove);
       container.removeEventListener("mouseleave", handleMouseLeave);
     };
+  }, []);
+
+  useEffect(() => {
+    // Check initial screen size
+    const checkScreenSize = () => {
+      setIsLargeScreen(window.innerWidth >= 1700);
+    };
+
+    // Initial check
+    checkScreenSize();
+
+    // Add resize listener
+    window.addEventListener("resize", checkScreenSize);
+
+    // Cleanup
+    return () => window.removeEventListener("resize", checkScreenSize);
   }, []);
 
   useEffect(() => {
@@ -433,7 +456,7 @@ export const HeroVisual = forwardRef<HeroVisualHandle>((_, ref) => {
         left: 0,
         right: 0,
         bottom: 0,
-        transform: "scale(3)",
+        transform: isLargeScreen ? "scale(1)" : "scale(3)",
       }}
     />
   );
