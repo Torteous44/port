@@ -178,7 +178,7 @@ const ContentSection: React.FC = () => {
               <p>SYSTEM DESIGN</p>
               <p>FULL STACK DEVELOPMENT</p>
               <h3>[TIMELINE]</h3>
-              <p>APR - SEPT 2023</p>
+              <p> FEB - APR 2023</p>
               <h3>[NOTES]</h3>
               <p>BACKED BY A WHARTON MBA VENTURE FUND</p>
             </div>
