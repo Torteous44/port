@@ -116,8 +116,31 @@
   font-weight: 300;
   margin: 0;
   color: black;
+}
 
+.projectLink {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  width: 100%;
+}
 
+.projectName h2 {
+  display: flex;
+  align-items: center;
+}
+
+.projectArrow {
+  width: 18px;
+  height: 18px;
+  margin-left: 6px;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  margin-bottom: 6px;
+}
+
+.projectLink:hover .projectArrow {
+  opacity: 1;
 }
 
 .projectDetails {
@@ -278,6 +301,17 @@
     border-bottom: none;
   }
   
+  /* Project link styles for mobile */
+  .projectLink {
+    display: flex;
+    width: 100%;
+  }
+  
+  .projectArrow {
+    opacity: 1;
+    margin-left: 6px;
+  }
+  
   /* Special grid layout for mobile - 2 columns instead of 3 */
   .gridContainer {
     display: grid;
@@ -349,6 +383,8 @@
   .projectName h2 {
     font-size: 20px;
     text-align: left;
+    display: flex;
+    align-items: center;
   }
   
   .description {

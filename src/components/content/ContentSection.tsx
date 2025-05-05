@@ -102,7 +102,21 @@ const ContentSection: React.FC = () => {
         <div className={styles.gridContainer}>
           {/* Project 1 */}
           <div className={`${styles.gridItem} ${styles.projectName}`}>
-            <h2>THUMBSY.XYZ</h2>
+            <a
+              href="https://thumbsy.xyz"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.projectLink}
+            >
+              <h2>
+                THUMBSY.XYZ
+                <img
+                  src="/uparrowright.svg"
+                  alt="↗"
+                  className={styles.projectArrow}
+                />
+              </h2>
+            </a>
           </div>
           <div className={`${styles.gridItem} ${styles.projectDetails}`}>
             <div className={styles.detailsContainer}>
@@ -134,7 +148,21 @@ const ContentSection: React.FC = () => {
 
           {/* Project 2 */}
           <div className={`${styles.gridItem} ${styles.projectName}`}>
-            <h2>CASE PREPARED</h2>
+            <a
+              href="https://caseprepared.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.projectLink}
+            >
+              <h2>
+                CASE PREPARED
+                <img
+                  src="/uparrowright.svg"
+                  alt="↗"
+                  className={styles.projectArrow}
+                />
+              </h2>
+            </a>
           </div>
           <div className={`${styles.gridItem} ${styles.projectDetails}`}>
             <div className={styles.detailsContainer}>
@@ -167,7 +195,21 @@ const ContentSection: React.FC = () => {
 
           {/* Project 3 */}
           <div className={`${styles.gridItem} ${styles.projectName}`}>
-            <h2>REACH</h2>
+            <a
+              href="https://use-reach.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.projectLink}
+            >
+              <h2>
+                REACH
+                <img
+                  src="/uparrowright.svg"
+                  alt="↗"
+                  className={styles.projectArrow}
+                />
+              </h2>
+            </a>
           </div>
           <div className={`${styles.gridItem} ${styles.projectDetails}`}>
             <div className={styles.detailsContainer}>
@@ -209,7 +251,21 @@ const ContentSection: React.FC = () => {
         <div className={styles.gridContainer}>
           {/* Project 4 */}
           <div className={`${styles.gridItem} ${styles.projectName}`}>
-            <h2>AZULU EVENTS</h2>
+            <a
+              href="https://azulu.nl"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.projectLink}
+            >
+              <h2>
+                AZULU EVENTS
+                <img
+                  src="/uparrowright.svg"
+                  alt="↗"
+                  className={styles.projectArrow}
+                />
+              </h2>
+            </a>
           </div>
           <div className={`${styles.gridItem} ${styles.projectDetails}`}>
             <div className={styles.detailsContainer}>
@@ -240,7 +296,21 @@ const ContentSection: React.FC = () => {
 
           {/* Project 5 */}
           <div className={`${styles.gridItem} ${styles.projectName}`}>
-            <h2>SANTA CRUZ ARCHIVE</h2>
+            <a
+              href="https://santacruzarchive.net"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.projectLink}
+            >
+              <h2>
+                SANTA CRUZ ARCHIVE
+                <img
+                  src="/uparrowright.svg"
+                  alt="↗"
+                  className={styles.projectArrow}
+                />
+              </h2>
+            </a>
           </div>
           <div className={`${styles.gridItem} ${styles.projectDetails}`}>
             <div className={styles.detailsContainer}>
